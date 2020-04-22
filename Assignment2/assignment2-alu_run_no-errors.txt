@@ -1,0 +1,73 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# Loading project Lab Assignment 2
+vsim -gui work.alu
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui 
+# Start time: 21:12:02 on Feb 19,2020
+# Loading std.standard
+# Loading work.bv_arithmetic(body)
+# Loading work.dlx_types
+# Loading work.alu(behaviour)
+add wave sim:/alu/*
+force -freeze sim:/alu/operand1 32'h00001000 0
+force -freeze sim:/alu/operand2 32'h00000010 0
+run
+force -freeze sim:/alu/operand1 32'hFFFFFFFF 0
+force -freeze sim:/alu/operand2 32'h0000FFFF 0
+force -freeze sim:/alu/operation 4'h1 0
+run
+force -freeze sim:/alu/operand1 32'h10101010 0
+force -freeze sim:/alu/operand2 32'h01010101 0
+force -freeze sim:/alu/operation 4'h2 0
+run
+force -freeze sim:/alu/operand1 32'hF0F0F0F0 0
+force -freeze sim:/alu/operand2 32'h0F0F0F0F 0
+force -freeze sim:/alu/operation 4'h3 0
+run
+force -freeze sim:/alu/operand1 32'h0000FFFF 0
+force -freeze sim:/alu/operand2 32'h00001111 0
+force -freeze sim:/alu/operation 4'h4 0
+run
+force -freeze sim:/alu/operand1 32'h00001100 0
+force -freeze sim:/alu/operand2 32'h00000011 0
+force -freeze sim:/alu/operation 4'h5 0
+run
+force -freeze sim:/alu/operand1 32'h11100111 0
+force -freeze sim:/alu/operand2 32'h11000011 0
+force -freeze sim:/alu/operation 4'h7 0
+run
+force -freeze sim:/alu/operand1 32'h11111100 0
+force -freeze sim:/alu/operand2 32'h00111111 0
+force -freeze sim:/alu/operation 4'h9 0
+run
+force -freeze sim:/alu/operand1 32'h10101010 0
+force -freeze sim:/alu/operand2 32'h00000000 0
+force -freeze sim:/alu/operation 4'hB 0
+run
+force -freeze sim:/alu/operand1 32'h11110000 0
+force -freeze sim:/alu/operand2 32'h0000FFFF 0
+force -freeze sim:/alu/operation 4'hC 0
+run
+force -freeze sim:/alu/operation 4'hD 0
+run
+force -freeze sim:/alu/operation 4'hE 0
+run
+force -freeze sim:/alu/operation 4'hF 0
+run
